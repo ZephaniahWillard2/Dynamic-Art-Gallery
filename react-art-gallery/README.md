@@ -69,7 +69,7 @@
         This is crucial for adding navigation capabilities to the app.
 
             npm install react-router-dom
-            
+
     Start the Development Server:
 
             npm start
