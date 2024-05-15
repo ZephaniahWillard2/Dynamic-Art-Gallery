@@ -1,3 +1,6 @@
+
+
+
 .card {
   display: grid;
 }
@@ -9,6 +12,7 @@
   text-align: left;
   gap: 20px;
   padding-top: 10px;
+  color: #ffd2d0;
 }
 
 
