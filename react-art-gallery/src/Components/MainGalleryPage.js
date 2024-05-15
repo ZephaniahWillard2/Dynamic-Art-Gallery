@@ -44,9 +44,6 @@ const MainGalleryPage = () => {
                 <Button size="xs" fontSize={'smaller'}>Feature</Button>
                 <Button size="xs" fontSize={'smaller'}>Collection</Button>
             </Box>
-
-            
-
           </Box>
         </Box>
       ))}

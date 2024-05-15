@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { Box, Image, Text, Button } from '@chakra-ui/react';
 
 const artworksData = [
-  { id: 1, name: 'Artwork 1', artist: 'Artist A', deets: 'the fitness gram pacer test is a multifaceted configuation exam', imageUrl: 'https://via.placeholder.com/300' },
+  { id: 1, name: 'Artwork 1', artist: 'Artist A', deets: 'deets', imageUrl: 'https://via.placeholder.com/300' },
   { id: 2, name: 'Artwork 2', artist: 'Artist B', deets: 'deets', imageUrl: 'https://via.placeholder.com/300' },
   { id: 3, name: 'Artwork 3', artist: 'Artist C', deets: 'deets', imageUrl: 'https://via.placeholder.com/300' },
   { id: 4, name: 'Artwork 4', artist: 'Artist D', deets: 'deets', imageUrl: 'https://via.placeholder.com/300' },
