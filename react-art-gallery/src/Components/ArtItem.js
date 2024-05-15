@@ -1,27 +1,33 @@
 import React from "react";
-import { Card, CardHeader, CardBody, CardFooter, Text, Button, SimpleGrid, Heading } from '@chakra-ui/react'
+import { Box, Image, Text, Button } from '@chakra-ui/react';
+import { Link } from 'react-router-dom';
+
 
 
 const ArtItem = ({item, toggleFeature, addToCollection}) => {
     return(
-        <SimpleGrid spacing={40} templateColumns='repeat(auto-fill, minmax(250px, 1fr))'>
-            <Card border={"solid"} >
-                <CardHeader>
-                    <Heading size='md' ></Heading> 
-                    {/* replace heading with image */}
-                </CardHeader>
-                <CardBody>
-                    <Text>{item.title}</Text>
-                    <Text>{item.name}</Text>
-                </CardBody>
-                <CardFooter>
-                    <Button onClick={() => toggleFeature(item)}>{item.isFeatured ? "Remove" : "Add to Feature"}</Button>
-                    <Button onClick={() => addToCollection(item)}>collection</Button>
-                </CardFooter>
-            </Card>
-
-           
-        </SimpleGrid>
+        <Box backgroundColor="#ffd2d0" borderRadius='10px'>
+        <Button as={Link} to="/" mb="4" color='white' backgroundColor='#b70132' _hover={{backgroundColor:'#c9073b'}}>
+            Back to Gallery
+        </Button>
+        <Box borderWidth="1px" borderRadius="lg" overflow="hidden" display="flex">
+            <Image src={item.imageUrl} alt={item.name} />
+            <Box p="4" >
+                <Text fontSize="lg" fontWeight="bold">
+                    {item.name}
+                </Text>
+                <Text fontSize="md" color={'black'} mt="2">
+                    Artist: {item.artist}
+                </Text>
+                {/* Add more details about the artwork */}
+                <Box display="flex" flexDirection="row">
+                    <Text fontSize="md" color={'black'} mt="2">
+                        {item.deets}
+                    </Text>
+                </Box>
+            </Box>
+        </Box>
+    </Box>
        
     )
 }

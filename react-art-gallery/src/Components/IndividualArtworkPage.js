@@ -12,7 +12,7 @@ const artworksData = [
   { id: 7, name: 'Artwork 7', artist: 'Artist G', deets: 'deets', imageUrl: 'https://via.placeholder.com/300' },
   { id: 8, name: 'Artwork 8', artist: 'Artist H', deets: 'deets', imageUrl: 'https://via.placeholder.com/300' }
 
-  // Add more artworks as needed
+  
 ];
 
 const IndividualArtworkPage = () => {

@@ -13,7 +13,7 @@ const artworksData = [
   { id: 8, name: 'Artwork 8', artist: 'Artist H', imageUrl: 'https://via.placeholder.com/300' }
 
 
-  // Add more artworks as needed
+  
 ];
 
 const MainGalleryPage = () => {
