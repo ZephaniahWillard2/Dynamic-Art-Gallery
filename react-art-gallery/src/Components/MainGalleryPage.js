@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { Grid, Box, Image, Text, Button } from '@chakra-ui/react';
 
 const artworksData = [
-  { id: 1, name: 'Artwork 1', artist: 'Artist A', imageUrl: 'https://via.placeholder.com/300' },
-  { id: 2, name: 'Artwork 2', artist: 'Artist B', imageUrl: 'https://via.placeholder.com/300' },
+  { id: 1, name: 'Artwork 1', artist: 'Artist A', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/54/Claude_Monet%2C_Impression%2C_soleil_levant.jpg' },
+  { id: 2, name: 'Artwork 2', artist: 'Artist B', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/2560px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg' },
   { id: 3, name: 'Artwork 3', artist: 'Artist C', imageUrl: 'https://via.placeholder.com/300' },
   { id: 4, name: 'Artwork 4', artist: 'Artist D', imageUrl: 'https://via.placeholder.com/300' },
   { id: 5, name: 'Artwork 5', artist: 'Artist E', imageUrl: 'https://via.placeholder.com/300' },

@@ -3,8 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { Box, Image, Text, Button } from '@chakra-ui/react';
 
 const artworksData = [
-  { id: 1, name: 'Artwork 1', artist: 'Artist A', deets: 'deets', imageUrl: 'https://via.placeholder.com/300' },
-  { id: 2, name: 'Artwork 2', artist: 'Artist B', deets: 'deets', imageUrl: 'https://via.placeholder.com/300' },
+  { id: 1, name: 'Artwork 1', artist: 'Artist A', deets: 'deets', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/54/Claude_Monet%2C_Impression%2C_soleil_levant.jpg' },
+  { id: 2, name: 'Artwork 2', artist: 'Artist B', deets: 'deets', imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/2560px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg' },
   { id: 3, name: 'Artwork 3', artist: 'Artist C', deets: 'deets', imageUrl: 'https://via.placeholder.com/300' },
   { id: 4, name: 'Artwork 4', artist: 'Artist D', deets: 'deets', imageUrl: 'https://via.placeholder.com/300' },
   { id: 5, name: 'Artwork 5', artist: 'Artist E', deets: 'deets', imageUrl: 'https://via.placeholder.com/300' },
@@ -29,7 +29,7 @@ const IndividualArtworkPage = () => {
             Back to Gallery
         </Button>
         <Box borderWidth="1px" borderRadius="lg" overflow="hidden" display="flex">
-            <Image src={artwork.imageUrl} alt={artwork.name} />
+            <Image src={artwork.imageUrl} alt={artwork.name} height={'30%'} width={'30%'}/>
             <Box p="4" >
                 <Text fontSize="lg" fontWeight="bold">
                     {artwork.name}

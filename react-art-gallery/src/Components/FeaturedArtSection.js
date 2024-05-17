@@ -1,5 +1,6 @@
 import React from 'react';
 import MainGalleryPage from './MainGalleryPage';
+import ArtList from './ArtList';
 
 const FeaturedArtSection = ({ featuredArtworks, moveArtworkToFeatured }) => {
 
@@ -10,8 +11,8 @@ const FeaturedArtSection = ({ featuredArtworks, moveArtworkToFeatured }) => {
     <div>
       <h2 style={{ height: '400px', fontSize: '1.8rem', paddingLeft: "20px", borderBottom: 'solid #b70132 10px' }}>Featured Art</h2>
       <div>
-        {featuredArtworks.map((artwork) => (
-          <MainGalleryPage key={artwork.id} featuredArtworks={featuredArtworks} moveArtworkToFeatured={moveArtworkToFeatured}/>
+        {featuredArtworks.map((items) => (
+          <ArtList key={items.id} featuredArtworks={featuredArtworks} moveArtworkToFeatured={moveArtworkToFeatured}/>
           
          
         ))}
