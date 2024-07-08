@@ -33,7 +33,7 @@ const App = () => {
       </h2>
       <div className='Art-gallery' 
         style={{
-        backgroundColor:'#c9fdff', 
+        backgroundColor:'#aef5f752', 
         height:'900px', 
         overflowY:'auto'
         }}>

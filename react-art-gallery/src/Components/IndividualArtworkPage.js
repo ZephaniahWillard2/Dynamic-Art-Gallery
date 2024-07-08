@@ -24,7 +24,7 @@ const IndividualArtworkPage = () => {
   return (
     <Box backgroundColor="#ffd2d0" borderRadius='10px'>
         <Button as={Link} to="/" mb="4" color='white' backgroundColor='#b70132' _hover={{backgroundColor:'#c9073b'}}>Back to Gallery</Button>
-        <Box borderWidth="1px" borderRadius="lg" overflow="hidden" display="flex">
+        <Box borderWidth="1px" borderColor="#ababab68" borderRadius="lg" overflow="hidden" display="flex">
             <Image src={artwork.imageUrl} alt={artwork.name} height={'30%'} width={'30%'}/>
             <Box p="4" >
                 <Text fontSize="lg" fontWeight="bold">
